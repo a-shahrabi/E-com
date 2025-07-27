@@ -30,3 +30,7 @@ cp .env.example .env
 
 # Start development server
 npm run dev
+
+DATABASE_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
