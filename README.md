@@ -18,3 +18,15 @@ Database: MongoDB
 Authentication: JWT tokens
 Payment: Stripe API
 Hosting: AWS/Heroku
+
+# Clone the repository
+git clone https://github.com/username/ecommerce-website.git
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Start development server
+npm run dev
