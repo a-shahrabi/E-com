@@ -34,3 +34,14 @@ npm run dev
 DATABASE_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
+
+Contributing
+
+Fork the repository
+Create a feature branch (git checkout -b feature/new-feature)
+Commit changes (git commit -m 'Add new feature')
+Push to branch (git push origin feature/new-feature)
+Open a Pull Request
+
+License
+MIT License - see LICENSE file for details.
