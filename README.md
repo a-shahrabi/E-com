@@ -43,5 +43,20 @@ Commit changes (git commit -m 'Add new feature')
 Push to branch (git push origin feature/new-feature)
 Open a Pull Request
 
+# Christmas E-commerce Website
+
+A festive online store for Christmas decorations, gifts, and holiday items - built for [Your Friend's Name].
+
+## 🎄 Features
+
+- **Product Catalog**: Browse Christmas decorations, gifts, and holiday items
+- **Shopping Cart**: Add/remove items, calculate totals
+- **Secure Checkout**: Safe payment processing with Stripe/PayPal
+- **User Accounts**: Customer registration, login, order history
+- **Admin Panel**: Manage products, orders, and inventory
+- **Mobile Responsive**: Works perfectly on phones and tablets
+- **Search & Filter**: Find products by category, price, or keyword
+
+
 License
 MIT License - see LICENSE file for details.
