@@ -44,8 +44,8 @@ cd ecommerce-website
 ```
 
 
-#!/bin/bash
 
+```
 echo "---- Christmas E-Commerce Setup ----"
 
 # 1. Install dependencies
@@ -85,6 +85,7 @@ echo "Starting development server..."
 npm run dev
 
 echo "---- Setup Complete! ----"
+```
 
 
 
