@@ -89,3 +89,13 @@ echo "---- Setup Complete! ----"
 
 
 
+---
+
+> **Tips:**
+> - Replace `[Your Friend's Name]` and the GitHub URL with your details.
+> - Add screenshots or demo GIFs with `![Alt text](path/to/image.png)` if you want to show off your site.
+> - You can copy all the above (between the ````markdown```` blocks) directly into your `README.md`.
+
+Let me know if you want more sections (badges, screenshots, FAQ, etc.)!
+
+
