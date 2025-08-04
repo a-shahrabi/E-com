@@ -44,4 +44,47 @@ cd ecommerce-website
 ```
 
 
+#!/bin/bash
+
+echo "---- Christmas E-Commerce Setup ----"
+
+# 1. Install dependencies
+echo "Installing dependencies..."
+npm install
+
+# 2. Copy environment variables template
+if [ ! -f ".env" ]; then
+    cp .env.example .env
+    echo ".env file created from .env.example."
+else
+    echo ".env already exists. Skipping copy."
+fi
+
+# 3. Prompt for environment variables and update .env
+echo "Configuring environment variables..."
+
+read -p "Enter your MongoDB connection string: " mongodb
+read -p "Enter your JWT secret: " jwt
+read -p "Enter your Stripe secret key: " stripe
+
+# Use sed to replace or append variables
+sed -i.bak "/^DATABASE_URL=/d" .env
+sed -i.bak "/^JWT_SECRET=/d" .env
+sed -i.bak "/^STRIPE_SECRET_KEY=/d" .env
+
+echo "DATABASE_URL=$mongodb" >> .env
+echo "JWT_SECRET=$jwt" >> .env
+echo "STRIPE_SECRET_KEY=$stripe" >> .env
+
+rm .env.bak 2>/dev/null
+
+echo "Environment variables updated."
+
+# 4. Start development server
+echo "Starting development server..."
+npm run dev
+
+echo "---- Setup Complete! ----"
+
+
 
